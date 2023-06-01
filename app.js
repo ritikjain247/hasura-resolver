@@ -36,6 +36,6 @@ const context = ({ req }) => {
 };
 
 const schema = new ApolloServer({ typeDefs, resolvers, context });
-schema.listen({ port: process.env.PORT }).then(({ url }) => {
+schema.listen({ port: 5200 }).then(({ url }) => {
   console.log(`schema ready at ${url}`);
 });
